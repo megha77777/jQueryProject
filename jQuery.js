@@ -13,10 +13,10 @@ $(document).ready(function () {
   $('ul').on('click', '.fa-trash', function () {
     $(this).parent('li').fadeOut(500);
   });
-  // $('ul').on('click', '.fa-check', function () {
-  //   $(this).parent('li').toggleClass('checked');
-  // });
-  $('ul').click(function () {
-    $(this).children('li').toggleClass('checked');
+  $('ul').on('click', '.fa-check', function () {
+    $(this).parent('li').toggleClass('checked');
   });
+  // $('ul').click(function () {
+  //   $(this).children('li').toggleClass('checked');
+  // });
 });
